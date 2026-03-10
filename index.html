@@ -1,336 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FDG SoluTech</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME - Trabalhos de Programação</title>
 
-<style>
-/* RESET */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial, Helvetica, sans-serif;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-body{
-  background:#fff;
-  color:#333;
-}
+    body {
+      background: #3f4c3f;
+    }
 
-/* NAVBAR */
-header{
-  position:fixed;
-  top:0;
-  width:100%;
-  height:70px;
-  background:rgba(0,0,0,.6);
-  z-index:1000;
-}
+ 
+    .header {
+      position: sticky;
+      top: 0;
+      background: #516751;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
 
-.nav{
-  max-width:1200px;
-  height:100%;
-  margin:auto;
-  padding:0 20px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
+    .header h1 a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    .header h1 a:hover {
+     background: #569651;
+      color: #191919;
+    }
 
-.logo{
-  color:#fff;
-  font-weight:bold;
-  font-size:20px;
-}
+    header a {
+      text-decoration: none;
+      padding: 8px 16px;
+      background: #516751;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
 
-.logo span{
-  color:#ff7a00;
-}
 
-/* HAMBURGER */
-.hamburger{
-  display:flex;
-  flex-direction:column;
-  gap:5px;
-  cursor:pointer;
-}
+    main {
+      padding: 40px;
+      display: flex;
+      gap: 40px;
+      justify-content: space-between;
+    }
 
-.hamburger span{
-  width:26px;
-  height:2px;
-  background:#fff;
-}
+  
+    .sobre {
+      flex: 1;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(123, 74, 74, 0.1);
+    }
 
-/* MENU OVERLAY */
-.menu-overlay{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.6);
-  display:none;
-  z-index:2000;
-}
+    .sobre:hover {
 
-.menu-overlay.active{
-  display:block;
-}
+      background: transparent;
+      color: #fff;
+      padding: 50px;
+      border-color: #a31d1d;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(123, 74, 74, 0.1);
+    }
 
-.menu-box{
-  background:#fff;
-  max-width:600px;
-  margin:80px auto;
-  border-radius:14px;
-  padding:20px;
-}
+    .sobre h1 {
+      margin-bottom: 20px;
+      color: #0f172a;
+    }
 
-/* MENU TOP */
-.menu-top{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
+    .sobre p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
 
-.menu-top button{
-  background:none;
-  border:none;
-  font-size:22px;
-  cursor:pointer;
-}
 
-/* MENU LINKS */
-.menu-links{
-  display:flex;
-  flex-direction:column;
-  margin:25px 0;
-}
+    .trimestres {
+      width: 100%;
+      max-width: 300px;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
-.menu-links a{
-  padding:14px 0;
-  text-decoration:none;
-  color:#333;
-  font-size:16px;
-}
+    .trimestres h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0f172a;
+    }
 
-/* MENU FOOTER */
-.menu-footer{
-  border-top:1px solid #ddd;
-  padding-top:15px;
-}
+    .trimestres a {
+      display: block;
+      margin-bottom: 15px;
+      padding: 15px;
+      text-align: center;
+      background: #070808;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
 
-.menu-footer p{
-  margin-bottom:10px;
-}
+    .trimestres a:hover {
+      background: #06f926;
+      color: #000;
+    }
 
-.menu-footer a{
-  display:block;
-  background:#ff7a00;
-  color:#fff;
-  text-align:center;
-  padding:14px;
-  border-radius:25px;
-  text-decoration:none;
-}
+  
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
 
-/* HERO */
-.hero{
-  height:100vh;
-  background:
-    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-    url("https://images.unsplash.com/photo-1581090700227-1e37b190418e");
-  background-size:cover;
-  background-position:center;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:20px;
-}
-
-.hero-content{
-  color:#fff;
-  max-width:700px;
-}
-
-.hero-content h1{
-  font-size:42px;
-}
-
-.hero-content h1 span{
-  color:#ff7a00;
-}
-
-.hero-content p{
-  margin:20px 0;
-  line-height:1.6;
-}
-
-.hero-buttons{
-  display:flex;
-  gap:15px;
-  justify-content:center;
-  flex-wrap:wrap;
-}
-
-.hero-buttons a{
-  padding:14px 25px;
-  border-radius:25px;
-  text-decoration:none;
-}
-
-.btn-orange{
-  background:#ff7a00;
-  color:#fff;
-}
-
-.btn-white{
-  background:#fff;
-  color:#333;
-}
-
-/* SECTION */
-section{
-  padding:80px 20px;
-}
-
-.section-title{
-  text-align:center;
-  margin-bottom:40px;
-}
-
-.section-title h2 span{
-  color:#ff7a00;
-}
-
-/* GALERIA */
-.galeria{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:15px;
-  max-width:1200px;
-  margin:auto;
-}
-
-.galeria img{
-  width:100%;
-  border-radius:12px;
-}
-
-/* CONTACTO */
-.contacto{
-  max-width:600px;
-  margin:auto;
-}
-
-.contacto input,
-.contacto textarea{
-  width:100%;
-  padding:14px;
-  margin-bottom:15px;
-  border:1px solid #ccc;
-  border-radius:8px;
-}
-
-.contacto button{
-  width:100%;
-  padding:14px;
-  background:#ff7a00;
-  border:none;
-  color:#fff;
-  border-radius:25px;
-  cursor:pointer;
-}
-
-/* RESPONSIVO */
-@media(max-width:600px){
-  .hero-content h1{
-    font-size:32px;
-  }
-}
-</style>
+      .trimestres {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <div class="nav">
-    <div class="logo">FDG <span>SoluTech</span></div>
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
-  </div>
+<header class="header">
+  <h1><a href="index.html">Início</a></h1>
+
 </header>
 
-<!-- MENU -->
-<div class="menu-overlay" id="menu">
-  <div class="menu-box">
-    <div class="menu-top">
-      <strong>FDG SoluTech</strong>
-      <button id="closeMenu">✕</button>
-    </div>
+<main>
 
-    <div class="menu-links">
-      <a href="#inicio">Início</a>
-      <a href="servicos.html">Serviços</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#contacto">Contacto</a>
-    </div>
+  <div class="sobre">
+    <h1>SEJA BEM-VINDO AO MEU SITE</h1>
 
-    <div class="menu-footer">
-      <p>📞 937 714 998</p>
-      <a href="#">Falar no WhatsApp</a>
-    </div>
-  </div>
-</div>
+    <p>
+      <strong>Nome:</strong> Álvaro de Castro Bernardo <br>
+      <strong>Nº:</strong> 01<br>
+      <strong>Sala:</strong> 19 <br>
+      <strong>Turma:</strong> ANI <br>
+      <strong>Turno:</strong> Noite <br>
+      <strong>Classe:</strong> 13ª
+    </p>
 
-<!-- HERO -->
-<section class="hero" id="inicio">
-  <div class="hero-content">
-    <h1>FDG <span>SoluTech</span></h1>
-    <p>Qualidade, inovação e confiança em serviços técnicos e construção civil.</p>
-    <div class="hero-buttons">
-      <a href="#" class="btn-orange">Fale Connosco</a>
-      <a href="#galeria" class="btn-white">Ver Galeria</a>
-    </div>
-  </div>
-</section>
+    <p>
+      Este site foi desenvolvido no âmbito dos trabalhos de programação,
+      com o objetivo de aplicar os conhecimentos adquiridos em sala de aula.
+    </p>
 
-<!-- GALERIA -->
-<section id="galeria">
-  <div class="section-title">
-    <h2>Nossa <span>Galeria</span></h2>
-  </div>
-  <div class="galeria">
-    <img src="https://picsum.photos/400/300?1">
-    <img src="https://picsum.photos/400/300?2">
-    <img src="https://picsum.photos/400/300?3">
-    <img src="https://picsum.photos/400/300?4">
-  </div>
-</section>
-
-<!-- CONTACTO -->
-<section id="contacto">
-  <div class="section-title">
-    <h2>Entre em <span>Contacto</span></h2>
+    <p>
+      As atividades realizadas envolvem a criação de páginas web,
+      organização de conteúdos e utilização correta das tecnologias
+      HTML e CSS de forma prática e funcional.
+    </p>
   </div>
 
-  <form class="contacto">
-    <input type="text" placeholder="Nome">
-    <input type="email" placeholder="Email">
-    <textarea rows="5" placeholder="Mensagem"></textarea>
-    <button>Enviar Mensagem</button>
-  </form>
-</section>
 
-<script>
-const hamburger = document.getElementById("hamburger");
-const menu = document.getElementById("menu");
-const closeMenu = document.getElementById("closeMenu");
-
-hamburger.onclick = () => menu.classList.add("active");
-closeMenu.onclick = () => menu.classList.remove("active");
-</script>
+  <div class="trimestres">
+    <h2>Trimestres</h2>
+    <a href="pag/trimestre1.html">I Trimestre</a>
+    <a href="pag/trimestre2.html">II Trimestre</a>
+    <a href="pag/trimestre3.html">III Trimestre</a>
+  </div>
+</main>
 
 </body>
-  </html>
+</html>
