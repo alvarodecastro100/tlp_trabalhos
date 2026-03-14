@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I Trimestre</title>
+  <title>II Trimestre</title>
 
   <style>
     * {
@@ -14,14 +14,12 @@
     }
 
     body {
-      background: #4c5156;
+      background: #f0f1f1;
     }
 
-    
     .header {
       position: sticky;
       top: 0;
-      
       padding: 15px 25px;
       display: flex;
       justify-content: space-between;
@@ -29,14 +27,13 @@
     }
 
     .header h1 a {
-      color: #fff;
+      color: #020202;
       text-decoration: none;
     }
 
     nav {
       display: flex;
       gap: 10px;
-      
     }
 
     nav a {
@@ -49,43 +46,87 @@
       align-items: center;
     }
 
-  
-    main {
-      padding: 40px;
-    }
-
-    .trimestre-box {
-      
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .trimestre-box h2 {
-      margin-bottom: 25px;
-      color: #000000;
-    }
-
-  
-    .trabalhos {
+    .cards {
       display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background: white;
     }
 
-    .trabalhos a {
-      padding: 15px 20px;
-      background: #060606;
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
+    .card {
+      width: 30%;
       border-radius: 8px;
-      transition: 0.3s;
+      padding: 20px;
+      text-align: center;
     }
 
-    .trabalhos a:hover {
-      background: #38f848;
-      color: #000;
+    .cardi {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .conteudo {
+      display: flex;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .box-texto {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      width: 50%;
+    }
+
+    .box-texto h2 {
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    footer {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 20px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-btn {
+        display: block;
+      }
+
+      .sidebar {
+        display: none;
+      }
+
+      .sidebar.active {
+        display: block;
+      }
+
+      .cards {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      .conteudo {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -102,7 +143,68 @@
   </nav>
 </header>
 
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus sed maxime, ab alias assumenda possimus ullam in aperiam unde dolor, animi, dolorum 
-  obcaecati recusandae rem. Ab eligendi ipsum tempora a!</p>
+ 
+<section class="cards">
+  <div class="card">
+    <img src="https://placehold.co/600x400/1e293b/ffffff?text=Imagem+1" class="cardi" alt="Imagem 1">
+  </div>
+
+  <div class="card">
+    <img src="https://placehold.co/600x400/334155/ffffff?text=Imagem+2" class="cardi" alt="Imagem 2">
+  </div>
+
+  <div class="card">
+    <img src="https://placehold.co/600x400/475569/ffffff?text=Imagem+3" class="cardi" alt="Imagem 3">
+  </div>
+</section>
+ 
+<section class="conteudo">
+  <div class="box-texto">
+    <h2>Sobre as imagens</h2>
+    <p>
+      As três imagens acima fazem parte de um ensaio visual que explora 
+      diferentes texturas e contrastes. A primeira imagem traz uma composição 
+      clean com foco em minimalismo, ideal para representar simplicidade e 
+      elegância.
+    </p>
+    <p>
+      Já a segunda imagem aposta em tons médios e um equilíbrio visual que 
+      remete à modernidade. É um exemplo de como elementos geométricos podem 
+      criar profundidade mesmo em fundos neutros.
+    </p>
+    <p>
+      Por fim, a terceira imagem utiliza uma variação de tom para destacar 
+      formas e linhas, sugerindo movimento e dinamismo. Todas elas foram 
+      pensadas para transmitir harmonia e sofisticação.
+    </p>
+  </div>
+
+  <div class="box-texto">
+    <h3>Detalhes de cada imagem</h3>
+    <p>
+      <strong>Imagem 1:</strong> Fundo escuro com texto claro – transmite 
+      seriedade e destaque para a mensagem.
+    </p>
+    <p>
+      <strong>Imagem 2:</strong> Tom intermediário que equilibra contraste – 
+      passa estabilidade e confiança.
+    </p>
+    <p>
+      <strong>Imagem 3:</strong> Variação sutil na cor – sugere inovação e 
+      criatividade sem perder a elegância.
+    </p>
+    <p>
+      Essas três imagens podem ser utilizadas em projetos de design, 
+      apresentações ou como inspiração para paletas de cores e composições 
+      visuais.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 - Galeria de Imagens</p>
+  <p>Desenvolvido por Inória Reais</p>
+</footer>
+
 </body>
-</html>
+  </html>
