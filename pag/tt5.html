@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I Trimestre</title>
+  <title>II Trimestre</title>
 
   <style>
     * {
@@ -49,6 +49,211 @@
       align-items: center;
     }
 
+     .tr{
+    margin: 10%;
+  }  
+   .ab{
+    margin: 10%;
+  }  
+
+  .cards {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background: white;
+    }
+
+    .card {
+      width: 30%;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .cardi {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .conteudo {
+      display: flex;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .box-texto {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      width: 50%;
+    }
+
+    .box-texto h2 {
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    footer {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 20px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+.container {
+      max-width: 1100px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+   
+    .lista-section {
+      margin-bottom: 40px;
+    }
+
+    .lista-section h2 {
+      color: #0f172a;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 8px;
+    }
+
+    .lista-exemplo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .lista-card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 250px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .lista-card h3 {
+      margin-bottom: 15px;
+      color: #1e293b;
+    }
+
+    .lista-card ul, .lista-card ol, .lista-card dl {
+      margin-left: 20px;
+      line-height: 1.8;
+    }
+
+    .lista-card dt {
+      font-weight: bold;
+      margin-top: 10px;
+      color: #0f172a;
+    }
+
+    .lista-card dd {
+      margin-left: 20px;
+      color: #334155;
+    }
+
+  
+    .tabela-section {
+      margin-bottom: 40px;
+    }
+
+    .tabela-section h2 {
+      color: #0f172a;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 8px;
+    }
+
+    .tabela-estilizada {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .tabela-estilizada th {
+      background-color: #111111;
+      color: white;
+      font-weight: bold;
+      padding: 12px 15px;
+      text-align: left;
+    }
+
+    .tabela-estilizada td {
+      padding: 10px 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .tabela-estilizada tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .tabela-estilizada tbody tr:hover {
+      background-color: #e9e9e9;
+    }
+
+  
+    .tabela-mesclada {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .tabela-mesclada th, .tabela-mesclada td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .tabela-mesclada th {
+      background-color: #111111;
+      color: white;
+    }
+
+    .tabela-mesclada td {
+      background-color: #fff;
+    }
+
+    .destaque {
+      background-color: #d1d5db;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 0 0 8px 8px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
   
     
   </style>
@@ -66,7 +271,353 @@
   </nav>
 </header>
 
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus sed maxime, ab alias assumenda possimus ullam in aperiam unde dolor, animi, dolorum 
-  obcaecati recusandae rem. Ab eligendi ipsum tempora a!</p>
+
+<div class="tr">
+    <h1>CONTEÚDO: INTRODUÇÃO AO CSS</h1><br>
+    <p><strong>1. O que é CSS?</strong></p><br>
+    <p>CSS significa Cascading Style Sheets (Folhas de Estilo em Cascata).
+O CSS é uma linguagem usada para dar estilo às páginas Web criadas com HTML.
+Enquanto o HTML serve para estruturar o conteúdo (textos, imagens, botões),
+ o CSS é responsável pela aparência visual da página.</p><br>
+
+  <p><strong>Exemplos do que o CSS faz:</strong></p><br>
+    <p>• Mudar cores dos textos;<br>
+• Alterar o tamanho das letras;<br>
+• Definir cores de fundo;<br>
+• Posicionar elementos na página.</p><br>
+
+  <p><strong>2. Importância do CSS no Desenvolvimento Web <br> <br> 
+    O CSS é muito importante porque:</strong></p><br>
+    <p>• Melhora a aparência dos sites, tornando-os mais bonitos 
+      e organizados;<br>
+• Facilita a leitura do conteúdo;<br>
+• Permite a separação entre conteúdo e design: o HTML → conteúdo
+o CSS → aparência<br>
+• Ajuda a manter e actualizar os sites com mais facilidade;<br>
+• Garante uma melhor experiência do utilizad</p><br>
+
+ <p><strong>3. Tipos de Folhas de Estilo CSS <br> <br> 
+  Existem três formas principais de aplicar CSS em uma página HTML: <br> <br>
+3.1 CSS Inline</strong></p><br>
+    <p>O CSS inline é aplicado directamente dentro da tag HTML.
+Exemplo:
+<"p style="color: blue;">"Este texto é azul<"/p></p><br>
+<p>
+  Características: <br>
+• É simples e rápido;<br>
+• Serve para pequenas alterações;<br>
+• Não é recomendado para páginas grandes<br>
+</p>
+
+ <p><strong>3.2 CSS Interna (Internal CSS) <br> <br> 
+ <p>
+  O CSS interno é escrito dentro da própria página HTML, 
+  usando a tag <!style>. <br>
+Exemplo: <br>
+<"style><br>
+ p {<br>
+ color: green;<br>
+ }<br>
+</"style><br>
+ </p><br>
+
+ <p>
+  Características:<br>
+• Organiza melhor o código que o CSS inline;<br>
+• Aplica estilo a vários elementos ao mesmo tempo;<br>
+• É usado quando o estilo é apenas para uma página<br>
+ </p>
+    
+  </div>
+  </div><br>
+
+  <div class="ab">
+    <p><strong>2. Seletores Simples em CSS <br><br>
+      Os seletores são usados para indicar quais elementos HTML receberão estilo.
+      Os principais seletores simples são:</strong>
+    </p><br>
+
+    <p>
+      • Seletor de elemento (tag): seleciona elementos pelo nome da tag;<br>
+      • Seletor de classe: seleciona elementos que possuem uma classe específica;<br>
+      • Seletor de ID: seleciona um elemento com identificador único;<br>
+      • Seletor universal: seleciona todos os elementos da página.<br>
+    </p><br>
+  </div><br>
+
+  <div class="ab">
+    <p><strong>3. Tipos de Seletores Simples <br><br>
+      3.1 Seletor de Elemento</strong>
+    </p><br>
+
+    <p>
+      O seletor de elemento utiliza o nome da tag HTML
+      e aplica o estilo a todos os elementos desse tipo.
+      <br><br>
+      Exemplo:
+    </p>
+
+    <p>
+      p { <br>
+      &nbsp;&nbsp;color: blue; <br>
+      }
+    </p><br>
+
+    <p>
+      Características:<br>
+      • Aplica o estilo a todas as tags iguais;<br>
+      • É simples e muito utilizado;<br>
+      • Possui baixa prioridade em relação a classes e IDs.<br>
+    </p><br>
+  </div><br>
+
+  <div class="ab">
+    <p><strong>3.2 Seletor de Classe</strong></p><br>
+
+    <p>
+      O seletor de classe é identificado por um ponto (.)
+      e permite aplicar estilos a vários elementos diferentes.
+      <br><br>
+      Exemplo:
+    </p>
+
+    <p>
+      .texto { <br>
+      &nbsp;&nbsp;font-size: 18px; <br>
+      }
+    </p><br>
+
+    <p>
+      Características:<br>
+      • Pode ser reutilizado em vários elementos;<br>
+      • Usa o ponto (.) antes do nome;<br>
+      • É muito comum no desenvolvimento web.<br>
+    </p><br>
+  </div><br>
+      <div class="ab">
+        </section>
+
+        
+<section class="cards">
+  <div class="card">
+    <img src="https://placehold.co/600x400/1e293b/ffffff?text=Imagem+1" class="cardi" alt="Imagem 1">
+  </div>
+
+  <div class="card">
+    <img src="https://placehold.co/600x400/334155/ffffff?text=Imagem+2" class="cardi" alt="Imagem 2">
+  </div>
+
+  <div class="card">
+    <img src="https://placehold.co/600x400/475569/ffffff?text=Imagem+3" class="cardi" alt="Imagem 3">
+  </div>
+</section>
+ 
+ 
+<section class="conteudo">
+  <div class="box-texto">
+    <h2>Sobre as imagens</h2>
+    <p>
+      As três imagens acima fazem parte de um ensaio visual que explora 
+      diferentes texturas e contrastes. A primeira imagem traz uma composição 
+      clean com foco em minimalismo, ideal para representar simplicidade e 
+      elegância.
+    </p>
+    <p>
+      Já a segunda imagem aposta em tons médios e um equilíbrio visual que 
+      remete à modernidade. É um exemplo de como elementos geométricos podem 
+      criar profundidade mesmo em fundos neutros.
+    </p>
+    <p>
+      Por fim, a terceira imagem utiliza uma variação de tom para destacar 
+      formas e linhas, sugerindo movimento e dinamismo. Todas elas foram 
+      pensadas para transmitir harmonia e sofisticação.
+    </p>
+  </div>
+
+  <div class="box-texto">
+    <h3>Detalhes de cada imagem</h3>
+    <p>
+      <strong>Imagem 1:</strong> Fundo escuro com texto claro – transmite 
+      seriedade e destaque para a mensagem.
+    </p>
+    <p>
+      <strong>Imagem 2:</strong> Tom intermediário que equilibra contraste – 
+      passa estabilidade e confiança.
+    </p>
+    <p>
+      <strong>Imagem 3:</strong> Variação sutil na cor – sugere inovação e 
+      criatividade sem perder a elegância.
+    </p>
+    <p>
+      Essas três imagens podem ser utilizadas em projetos de design, 
+      apresentações ou como inspiração para paletas de cores e composições 
+      visuais.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 - Galeria de Imagens</p>
+  <p>Desenvolvido por Inória Reais</p>
+</footer>
+
+<main class="container">
+  <p style="margin-bottom: 30px; font-size: 1.1rem;">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus sed maxime, ab alias assumenda possimus ullam in aperiam unde dolor, animi, dolorum 
+    obcaecati recusandae rem. Ab eligendi ipsum tempora a!
+  </p>
+ 
+  <section class="lista-section">
+    <h2>Exemplos de Listas</h2>
+    <div class="lista-exemplo">
+     
+      <div class="lista-card">
+        <h3>Lista de Compras (não ordenada)</h3>
+        <ul>
+          <li>Arroz</li>
+          <li>Feijão</li>
+          <li>Macarrão</li>
+          <li>Legumes
+            <ul>
+              <li>Tomate</li>
+              <li>Cenoura</li>
+              <li>Batata</li>
+            </ul>
+          </li>
+          <li>Frutas</li>
+        </ul>
+      </div>
+ 
+      <div class="lista-card">
+        <h3>Passos para fazer um bolo (ordenada)</h3>
+        <ol>
+          <li>Preaquecer o forno a 180°C</li>
+          <li>Misturar os ingredientes secos</li>
+          <li>Adicionar os líquidos e mexer bem</li>
+          <li>Despejar na forma untada</li>
+          <li>Assar por 40 minutos</li>
+          <li>Deixar esfriar e servir</li>
+        </ol>
+      </div>
+
+     
+      <div class="lista-card">
+        <h3>Glossário (lista de definição)</h3>
+        <dl>
+          <dt>HTML</dt>
+          <dd>Linguagem de marcação para criação de páginas web.</dd>
+          <dt>CSS</dt>
+          <dd>Linguagem de estilos para apresentação de documentos HTML.</dd>
+          <dt>JavaScript</dt>
+          <dd>Linguagem de programação que adiciona interatividade ao site.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="tabela-section">
+    <h2>Tabelas Estilizadas</h2>
+
+    
+    <h3 style="margin-bottom: 10px; color:#0f172a;">Tabela de Produtos</h3>
+    <table class="tabela-estilizada">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Categoria</th>
+          <th>Preço</th>
+          <th>Estoque</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Notebook</td>
+          <td>Eletrônicos</td>
+          <td>R$ 3.500,00</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>Smartphone</td>
+          <td>Eletrônicos</td>
+          <td>R$ 2.200,00</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>Mesa de escritório</td>
+          <td>Móveis</td>
+          <td>R$ 850,00</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>Cadeira ergonômica</td>
+          <td>Móveis</td>
+          <td>R$ 1.200,00</td>
+          <td>12</td>
+        </tr>
+      </tbody>
+    </table>
+ 
+    <h3 style="margin-bottom: 10px; color:#0f172a;">Horário de Aulas (com mesclagem)</h3>
+    <table class="tabela-mesclada">
+      <thead>
+        <tr>
+          <th>Horário</th>
+          <th>Segunda</th>
+          <th>Terça</th>
+          <th>Quarta</th>
+          <th>Quinta</th>
+          <th>Sexta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="destaque">08:00 - 09:00</td>
+          <td>Matemática</td>
+          <td>Português</td>
+          <td>História</td>
+          <td>Física</td>
+          <td>Química</td>
+        </tr>
+        <tr>
+          <td class="destaque">09:00 - 10:00</td>
+          <td>Matemática</td>
+          <td>Português</td>
+          <td>Geografia</td>
+          <td>Física</td>
+          <td>Química</td>
+        </tr>
+        <tr>
+          <td class="destaque">10:00 - 10:30</td>
+          <td colspan="5" style="background: #e2e8f0; text-align: center;">Intervalo</td>
+        </tr>
+        <tr>
+          <td class="destaque">10:30 - 11:30</td>
+          <td>Inglês</td>
+          <td>Educação Física</td>
+          <td rowspan="2">Biologia</td>
+          <td>Artes</td>
+          <td>Filosofia</td>
+        </tr>
+        <tr>
+          <td class="destaque">11:30 - 12:30</td>
+          <td>Inglês</td>
+          <td>Educação Física</td>
+          <td>Artes</td>
+          <td>Sociologia</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top: 10px; font-style: italic; color: #4b5563;">
+      * Tabela com uso de <strong>colspan</strong> (intervalo) e <strong>rowspan</strong> (Biologia ocupa duas linhas).
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 - Demonstração de Listas e Tabelas</p>
+  <p>Desenvolvido por Inória Reais</p>
+</footer>
+
 </body>
 </html>
